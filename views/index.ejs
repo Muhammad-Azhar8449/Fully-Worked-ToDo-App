@@ -37,7 +37,7 @@
                                         <%= task.title %>
                                     </strong> - <%= task.priority %>
                                         <a href="/edit/<%= task._id %>"><i class="ri-pencil-fill"></i></a>
-                                        <form action="/delete/<%= task._id %>" method="POST" style="display:inline;">
+                                        <form action="/delete/<%= task._id %>?_method=DELETE" method="POST">
                                             <button type="submit"><i class="ri-delete-bin-fill"></i></button>
                                         </form>
                                 </li>
